@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive is fluid and adapts to the size of the screen no matter what the target device. Responsive uses media queries  to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens. Adaptive design, on the other hand, uses static layouts based on breakpoints which don’t respond once they’re initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it – generally you would design an adaptive site for six common screen widths: 320, 480, 760, 960, 1200, 1600. On the surface, it appears that adaptive requires more work as you have to design layouts for a minimum of six widths. However, responsive can be more complex as improper use of media queries (or indeed not using them at all) can make for display and performance issues.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+You design from the max size of the screen when you design desktop first, and you design from the min width of the screen when you design mobile first.
+
+https://www.brainleaf.com/blog/brainleaf-news/mobile-first-vs-desktop-first-how-to-choose-a-responsive-strategy/
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+
+https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97
+
 4. How would you describe preprocessing to someone new to CSS?
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from,however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+To use a CSS preprocessor, you must install a CSS compiler on your web server.
+https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting. Parametric mix-ins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

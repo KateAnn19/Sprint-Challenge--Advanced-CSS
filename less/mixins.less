@@ -22,7 +22,7 @@
 
   //this is a parametric mix-in to be used on button
 
-  .customBtn (@bg-color:pink, @width:300px, @font-color:green){
+  .customBtn (@bg-color:pink, @width:300px, @font-color:green, @height:40px){
     // display: block;
     background-color: @bg-color;
     // margin: 0 8px 10px;
@@ -30,7 +30,7 @@
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     width: @width;
-    height: 40px;
+    height: @height;
     font-size: 2rem;
     border-radius: 10px;
     color: @font-color;
