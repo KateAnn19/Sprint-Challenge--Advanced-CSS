@@ -1,11 +1,24 @@
 // Mixins Here
 
-.center(){ //we want the parethesis because we want this mixin to be consumed by the compiler
-    display:flex;
-    justify-content:center;
-    background-color:@hover-color;
+// .center(){ //we want the parethesis because we want this mixin to be consumed by the compiler
+//     display:flex;
+//     justify-content:center;
+//     background-color:@hover-color;
+//   }
+
+//   .bordered() {
+//     padding: 20px 0;
+//     border-top: 1px dashed gray;
+//     border-bottom: 1px dashed gray;
+//   }
+
+  .radius(){
+    border-radius: 4px;
   }
 
+  .padding(){
+    padding: 15px;
+  }
 
   //this is a parametric mix-in to be used on button
 

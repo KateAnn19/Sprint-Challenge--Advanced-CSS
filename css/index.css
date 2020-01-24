@@ -215,7 +215,7 @@ footer {
   align-items: center;
 }
 .home .intro .space-banner {
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -231,7 +231,7 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
-  border-radius: 20px;
+  border-radius: 25px;
   height: 100%;
 }
 .home .visit-planets {
