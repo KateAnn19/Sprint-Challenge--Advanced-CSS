@@ -1,1 +1,37 @@
 // Mixins Here
+
+// .center(){ //we want the parethesis because we want this mixin to be consumed by the compiler
+//     display:flex;
+//     justify-content:center;
+//     background-color:@hover-color;
+//   }
+
+//   .bordered() {
+//     padding: 20px 0;
+//     border-top: 1px dashed gray;
+//     border-bottom: 1px dashed gray;
+//   }
+
+  .radius(){
+    border-radius: 4px;
+  }
+
+  .padding(){
+    padding: 15px;
+  }
+
+  //this is a parametric mix-in to be used on button
+
+  .customBtn (@bg-color:pink, @width:300px, @font-color:green, @height:40px){
+    // display: block;
+    background-color: @bg-color;
+    // margin: 0 8px 10px;
+    // font-family: 'Russo One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-color;
+  }
